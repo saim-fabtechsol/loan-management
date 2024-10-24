@@ -74,6 +74,7 @@
 }
 
 .btn-blue:hover {
+    color: #fff;
     background-color: rgba(11, 178, 212, .5);
 }
 
