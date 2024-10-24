@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Add state</title>
+    <title>Notifications</title>
 </head>
 
 <body class="template-body">
@@ -27,8 +27,8 @@
                     <div class="template-left-mid">
                         <ul class=" list-unstyled px-3">
                             <li>
-                                <a class="btn text-start ps-4 py-3 w-100" href="dashboard.html">
-                                    <img class="icon-image me-2" src="../images/dashboard.png" alt="img">
+                                <a class="btn active text-start ps-4 py-3 w-100" href="dashboard.html">
+                                    <img class="icon-image me-2" src="../images/dashboard-white.png" alt="img">
                                     Dashboard
                                 </a>
                             </li>
@@ -39,8 +39,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="btn active w-100 text-start ps-4 py-3" href="states.html">
-                                    <img class="me-2 icon-image" src="../images/globe-white.png" alt="img">
+                                <a class="btn w-100 text-start ps-4 py-3" href="states.html">
+                                    <img class="me-2 icon-image" src="../images/globe.png" alt="img">
                                     States
                                 </a>
                             </li>
@@ -90,37 +90,28 @@
                     </div>
                 </div>
                 <div class="tem-right-btm py-4 px-2 px-lg-0">
-                    <div class=" overflow-y-auto h-100">
+                    <div class=" bg-white t-main-shadow rounded p-3 h-100">
                         <!-- code inside this div -->
-                        <div class="states-main h-100">
-                            <div class="bg-white h-100 rounded t-main-shadow p-3">
-                                <div class="overflow-auto h-100">
-                                    <h3>Add State</h3>
-                                    <div class="add-state-form col-md-8">
-                                        <form action="">
-                                            <p class="mb-1 fw-bold">Upload Image</p>
-                                            <input class="d-none" type="file" name="state-img" id="up-state-img">
-                                            <div class="d-flex justify-content-center justify-content-sm-start">
-                                                <label for="up-state-img">
-                                                    <div class="image-prev-box position-relative">
-                                                        <div
-                                                            class="position-absolute top-50 start-50 translate-middle z-0">
-                                                            <i class="fa-solid fa-plus fs-2"></i>
-                                                        </div>
-                                                        <img id="state-uploaded-img" class="z-1 position-relative"
-                                                            src="/images/california.png" alt="img">
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-8 mt-4">
-                                                <input class="leads-sinput focus-none" type="text" name="state-name"
-                                                    id="state-name" placeholder="State Name">
-                                            </div>
-                                            <div
-                                                class="mt-4 d-flex col-sm-8 justify-content-center justify-content-sm-end">
-                                                <input class="btn btn-blue px-5 py-2" type="button" value="Submit">
-                                            </div>
-                                        </form>
+                        <div class=" overflow-y-auto h-100">
+                            <div class="mb-3 rounded-4 p-3 bg-warning">
+                                <div class="row">
+                                    <div class="col-md-8 d-flex align-items-center h-100">
+                                        <div class="me-3">
+                                            <img class="notification-img" src="../images/hamza.png" alt="img">
+                                        </div>
+                                        <div>
+                                            <p class="mb-0 fw-bold">Lorem Ipsum</p>
+                                            <p class="mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Possimus quidem earum tenetur expedita ut, provident dolore
+                                                numquam ipsum voluptas tempora, porro sed, voluptatibus culpa hic aut
+                                                qui quasi! At, ratione.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-end align-items-end h-100">
+                                        <div class="d-flex">
+                                            <p class="text-12 mb-0 me-3">16-September-2024</p>
+                                            <p class="text-12 mb-0">5:57 pm</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +119,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -139,19 +129,6 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
-
-    <script>
-        let uploadedimg = document.getElementById('up-state-img');
-        let previewdimg = document.getElementById('state-uploaded-img');
-        uploadedimg.addEventListener('input', function (event) {
-            console.log("Hello, World!");
-            let uploadedimgs = event.target.files[0];
-            previewdimg.src = URL.createObjectURL(uploadedimgs);
-            previewdimg.style.display = 'block';
-        })
-
-
-    </script>
 </body>
 
 </html>
