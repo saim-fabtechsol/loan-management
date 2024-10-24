@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="template-body">
+    <section>
+        <div class="template-main d-flex">
+            <div class="template-left d-xl-block">
+                <div class="d-flex flex-column justify-content-between h-100 bg-white px-1 py-4">
+                    <div class="template-left-top d-flex justify-content-center">
+                        <img class="template-logo" src="../images/dummy-logo.png" alt="Logo">
+                    </div>
+
+                    <div class="template-left-mid">
+                        <ul class=" list-unstyled px-3">
+                            <li>
+                                <a class="btn active text-start ps-4 py-3 w-100" href="#">
+                                    <img class="icon-image me-2" src="../images/dashboard-white.png" alt="img">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="leads.html">
+                                    <img class="me-2 icon-image" src="../images/teams.png" alt="img">
+                                    Leads
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="states.html">
+                                    <img class="me-2 icon-image" src="../images/globe.png" alt="img">
+                                    States
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="clearded.html">
+                                    <img class="me-2 icon-image" src="../images/bird.png" alt="img">
+                                    Cleared By Chirp
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="schedule.html">
+                                    <img class="me-2 icon-image" src="../images/calendar.png" alt="img">
+                                    Schedule
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="#">
+                                    <img class="me-2 icon-image" src="../images/file-edit.png" alt="img">
+                                    Reports
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="#">
+                                    <img class="me-2 icon-image" src="../images/rules-icon-1.png" alt="img">
+                                    Business Rules
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn w-100 text-start ps-4 py-3" href="#">
+                                    <img class="me-2 icon-image" src="../images/credit-card-icon.png" alt="img">
+                                    Payment types
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="template-left-bottom">
+                        <div class="d-flex justify-content-center px-4">
+                            <a class="btn d-flex align-items-center justify-content-center fw-medium border-2 py-3 border-golden w-100"
+                                href="#">
+                                <img class="icon-image me-3" src="../images/log-out-logo.png" alt="img">
+                                Log Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="template-right px-lg-4">
+                <div
+                    class="bg-white p-4 rounded-bottom t-main-shadow d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0 fw-bold">Dashboard</h2>
+                    <div class="d-flex align-items-center">
+                        <div class="tr-top-links">
+                            <a class="text-decoration-none mx-2 " href="#">
+                                <img class="tr-top-images" src="../images/notifications-icon.png" alt="img">
+                            </a>
+                            <a class="text-decoration-none mx-2 " href="#">
+                                <img class="tr-top-images" src="../images/user-icon.png" alt="img">
+                            </a>
+                        </div>
+                        <div class="tem-bar-btn fs-3 ms-3 pointer d-xl-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tem-right-btm py-4">
+                    <div class=" overflow-y-auto h-100">
+                        <!-- code inside this div -->
+                        <div>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="d-flex flex-wrap col-lg-6">
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/teams-blue.png" alt="">
+                                                <div>
+                                                    <p class="fs-3 mb-0">500+</p>
+                                                    <p class="lh-1 small mb-0">Total Leads</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/$-orange.png" alt="image">
+                                                <div>
+                                                    <p class="fs-3 mb-0">300+</p>
+                                                    <p class="lh-1 small mb-0">Total Loans</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/approveed-blue.png"
+                                                    alt="img">
+                                                <div>
+                                                    <p class="fs-3 mb-0">500+</p>
+                                                    <p class="lh-1 small mb-0">Amount Funded for Approvals</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/past-loans.png" alt="img">
+                                                <div>
+                                                    <p class="fs-3 mb-0">500+</p>
+                                                    <p class="lh-1 small mb-0">Past Due Loans</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/active-loans.png"
+                                                    alt="img">
+                                                <div>
+                                                    <p class="fs-3 mb-0">500+</p>
+                                                    <p class="lh-1 small mb-0">Active Loans</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/bird-blue.png" alt="img">
+                                                <div>
+                                                    <p class="fs-3 mb-0">700+</p>
+                                                    <p class="lh-1 small mb-0">Cleared by Chirps</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <div class="bg-white rounded-3 h-100 t-main-shadow">
+                                            <div class="d-flex align-items-center p-3">
+                                                <img class="db-card-icon me-2" src="../images/$-green.png" alt="img">
+                                                <div>
+                                                    <p class="fs-3 mb-0">$2000</p>
+                                                    <p class="lh-1 small mb-0">Amount Funded</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="pt-3 px-3">
+                                        <div class="bg-white rounded-3 t-main-shadow p-3">
+                                            <p class="fs-5">Expected to collect/ Collected</p>
+                                            <form action="">
+                                                <div>
+                                                    <input type="date" class="form-control text-secondary focus-none"
+                                                        placeholder="Select Date">
+                                                </div>
+                                            </form>
+                                            <div class="row">
+                                                <div class="col-sm-6 py-2">
+                                                    <div class="px-2 py-3 border rounded-2 h-100 d-flex flex-column">
+                                                        <div>
+                                                            <p class="fs-5">$86.4k</p>
+                                                            <div>
+                                                                <canvas class="w-100 h-100" id="myChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <p class="text-center mb-0">Expected to Collect</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 py-2 ">
+                                                    <div
+                                                        class="d-flex flex-column px-2 py-3 border rounded-2 h-100 position-relative">
+                                                        <div class=" position-absolute end-0 mx-4 pointer">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                        <div>
+                                                            <img src="../images/pi-icon.png" alt="icon">
+                                                        </div>
+                                                        <div
+                                                            class="mt-auto d-flex justify-content-between align-items-center">
+                                                            <div class="mt-3">
+                                                                <p>Collected</p>
+                                                                <p class="fs-3">$25.6k</p>
+                                                                <p class="text-secondary mb-0">Weekly Profit</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="text-success">+42%</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 mt-4">
+                                <div class="col-md-6 col-xxl-4 py-2 py-xxl-0">
+                                    <div class="bg-white h-100 p-3 rounded t-main-shadow">
+                                        <div class="d-flex h-100 flex-column">
+                                            <div>
+                                                <p class="small text-secondary lh-1">Total Loan</p>
+                                                <p class="fs-3 fw-bold my-4">128,7K</p>
+                                            </div>
+                                            <div class="mt-auto">
+                                                <canvas class="w-100 h-100" id="total-loan-graph"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-4 py-2 py-xxl-0">
+                                    <div class="bg-white h-100 p-3 rounded t-main-shadow">
+                                        <h3 class="fw-bold">New Leads</h3>
+                                        <div class="hidden-scroll overflow-auto db-list-div pe-2">
+                                            <ul class=" list-unstyled mb-0">
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/anita.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Anita Kanwal</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/hamza.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Hamza Asghar</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/nasir.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Nasir Mehmood</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/muazzam.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Muazzam Ahmad</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/anita.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Anita Kanwal</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/hamza.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Hamza Asghar</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/nasir.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Nasir Mehmood</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                                <li class="db-list-border py-2 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-profile-img me-2" src="../images/muazzam.png"
+                                                            alt="img">
+                                                        <p class="mb-0">Muazzam Ahmad</p>
+                                                    </div>
+                                                    <a class=" ms-auto db-blue-link small" href="#">See Details <i
+                                                            class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-4 py-2 py-xxl-0">
+                                    <div class="bg-white h-100 p-3 rounded t-main-shadow">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="fw-bold">Recent Activity</h3>
+                                            <a class="db-blue-link small" href="#">See All <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="hidden-scroll overflow-auto db-list-div pe-2">
+                                            <ul class=" list-unstyled mb-0">
+                                                <li class="db-list-border py-3 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-rec-act-img me-3" src="../images/teams.png"
+                                                            alt="img">
+                                                        <div>
+                                                            <h5 class="mb-0">Anita Kanwal</h5>
+                                                            <p class="text-secondary small mb-0">Lorem Ipsum is simply
+                                                                dummy text</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="db-list-border py-3 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-rec-act-img me-3" src="../images/bird.png"
+                                                            alt="img">
+                                                        <div>
+                                                            <h5 class="mb-0">Hamza’s Verification Completed</h5>
+                                                            <p class="text-secondary small mb-0">Lorem Ipsum is simply
+                                                                dummy text</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="db-list-border py-3 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-rec-act-img me-3" src="../images/$-black.png"
+                                                            alt="img">
+                                                        <div>
+                                                            <h5 class="mb-0">Loan Payed Successfully Completed</h5>
+                                                            <p class="text-secondary small mb-0">Lorem Ipsum is simply
+                                                                dummy text</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="db-list-border py-3 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-rec-act-img me-3" src="../images/teams.png"
+                                                            alt="img">
+                                                        <div>
+                                                            <h5 class="mb-0">Anita Kanwal</h5>
+                                                            <p class="text-secondary small mb-0">Lorem Ipsum is simply
+                                                                dummy text</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="db-list-border py-3 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-rec-act-img me-3" src="../images/bird.png"
+                                                            alt="img">
+                                                        <div>
+                                                            <h5 class="mb-0">Hamza’s Verification Completed</h5>
+                                                            <p class="text-secondary small mb-0">Lorem Ipsum is simply
+                                                                dummy text</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="db-list-border py-3 d-flex align-items-center">
+                                                    <div class=" d-flex align-items-center">
+                                                        <img class="db-rec-act-img me-3" src="../images/$-black.png"
+                                                            alt="img">
+                                                        <div>
+                                                            <h5 class="mb-0">Loan Payed Successfully Completed</h5>
+                                                            <p class="text-secondary small mb-0">Lorem Ipsum is simply
+                                                                dummy text</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
