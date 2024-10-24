@@ -2,17 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'dm_sans';
+    font-family: 'DM Sans';
 }
 
-@font-face {
-    font-family: 'dm_sans';
-    src: url('../fonts/dmsans-variablefont_opszwght-webfont.woff2') format('woff2'),
-        url('../fonts/dmsans-variablefont_opszwght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 .template-body {
     background-color: #F8F7FA;
