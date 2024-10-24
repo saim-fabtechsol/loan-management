@@ -180,13 +180,6 @@
     width: 100%;
 }
 
-.leads-s-btn {
-    color: #fff;
-    background-color: rgba(11, 178, 212, 1);
-    padding: 12px 40px;
-    max-width: 150px;
-}
-
 .leads-table th {
     font-weight: normal;
     color: rgba(122, 122, 122, 1);
@@ -204,6 +197,7 @@
 .leads-main .pagination .active>.page-link {
     background-color: rgba(11, 178, 212, 1);
     border-color: #0BB2D4;
+    color: #fff;
 }
 
 .leads-main .pagination .page-link {
@@ -262,10 +256,8 @@
 }
 
 .states-main .states-box {
-    width: 200px;
     height: 200px;
     position: relative;
-    margin: 12px;
 }
 
 .states-main .states-box::before {
@@ -314,6 +306,7 @@
 .cleared-main .pagination .active>.page-link {
     background-color: rgba(11, 178, 212, 1);
     border-color: #0BB2D4;
+    color: #fff;
 }
 
 .cleared-main .pagination .page-link {
@@ -374,13 +367,14 @@
 
 /* width */
 .template-left-mid::-webkit-scrollbar,
-.tem-right-btm>*::-webkit-scrollbar {
+.tem-right-btm *::-webkit-scrollbar {
     width: 6px;
+    height: 6px;
 }
 
 /* Track */
 .template-left-mid::-webkit-scrollbar-track,
-.tem-right-btm>*::-webkit-scrollbar-track {
+.tem-right-btm *::-webkit-scrollbar-track {
     border: 1px solid rgba(11, 178, 212, 1);
     background: rgba(11, 178, 212, .2);
     border-radius: 10px;
@@ -388,14 +382,14 @@
 
 /* Handle */
 .template-left-mid::-webkit-scrollbar-thumb,
-.tem-right-btm>*::-webkit-scrollbar-thumb {
+.tem-right-btm *::-webkit-scrollbar-thumb {
     background: rgba(11, 178, 212, 1);
     border-radius: 10px;
 }
 
 /* Handle on hover */
 .template-left-mid::-webkit-scrollbar-thumb:hover,
-.tem-right-btm>*::-webkit-scrollbar-thumb:hover {
+.tem-right-btm *::-webkit-scrollbar-thumb:hover {
     background: rgba(11, 178, 212, .7);
 }
 
