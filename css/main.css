@@ -306,6 +306,7 @@
 .cleared-main .pagination .active>.page-link {
     background-color: rgba(11, 178, 212, 1);
     border-color: #0BB2D4;
+    color: #fff;
 }
 
 .cleared-main .pagination .page-link {
