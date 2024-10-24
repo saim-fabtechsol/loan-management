@@ -40,7 +40,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="btn w-100 text-start ps-4 py-3" href="clearded.html">
+                                <a class="btn w-100 text-start ps-4 py-3" href="cleared.html">
                                     <img class="me-2 icon-image" src="../images/bird.png" alt="img">
                                     Cleared By Chirp
                                 </a>
@@ -101,29 +101,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="tem-right-btm py-4">
+                <div class="tem-right-btm py-4 px-2 px-lg-0">
                     <div class=" overflow-y-auto h-100">
                         <!-- code inside this div -->
                         <div class="states-main h-100">
                             <div class="bg-white h-100 rounded t-main-shadow p-3">
-                                <h3>Add State</h3>
-                                <div class="add-state-form">
-                                    <form action="">
-                                        <p class="mb-1 fw-bold">Upload Image</p>
-                                        <input class="d-none" type="file" name="state-img" id="up-state-img">
-                                        <label for="up-state-img">
-                                            <div class="image-prev-box position-relative">
-                                                <div class="position-absolute top-50 start-50 translate-middle z-0">
-                                                    <i class="fa-solid fa-plus"></i>
-                                                </div>
-                                                <img id="state-uploaded-img" class="z-1 position-relative"
-                                                    src="/images/california.png" alt="img">
+                                <div class="overflow-auto h-100">
+                                    <h3>Add State</h3>
+                                    <div class="add-state-form col-md-8">
+                                        <form action="">
+                                            <p class="mb-1 fw-bold">Upload Image</p>
+                                            <input class="d-none" type="file" name="state-img" id="up-state-img">
+                                            <div class="d-flex justify-content-center justify-content-sm-start">
+                                                <label for="up-state-img">
+                                                    <div class="image-prev-box position-relative">
+                                                        <div
+                                                            class="position-absolute top-50 start-50 translate-middle z-0">
+                                                            <i class="fa-solid fa-plus"></i>
+                                                        </div>
+                                                        <img id="state-uploaded-img" class="z-1 position-relative"
+                                                            src="/images/california.png" alt="img">
+                                                    </div>
+                                                </label>
                                             </div>
-                                        </label>
-                                        <div>
-                                            <input class="leads-sinput focus-none" type="text" name="state-name" id="state-name" placeholder="State Name">
-                                        </div>
-                                    </form>
+                                            <div class="col-sm-8 mt-4">
+                                                <input class="leads-sinput focus-none" type="text" name="state-name"
+                                                    id="state-name" placeholder="State Name">
+                                            </div>
+                                            <div
+                                                class="mt-4 d-flex col-sm-8 justify-content-center justify-content-sm-end">
+                                                <input class="btn btn-blue px-5 py-2" type="button" value="Submit">
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
