@@ -350,9 +350,9 @@
     display: none;
 }
 .notification-img{
-    width: 42px;
-    height: 42px;
-    border: 1px solid #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
     border-radius: 50%;
 }
 
