@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Add state</title>
+    <title>Add Lead</title>
 </head>
 
 <body class="template-body">
@@ -33,14 +33,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="btn w-100 text-start ps-4 py-3" href="leads.html">
-                                    <img class="me-2 icon-image" src="../images/teams.png" alt="img">
+                                <a class="btn active w-100 text-start ps-4 py-3" href="leads.html">
+                                    <img class="me-2 icon-image" src="../images/teams-white.png" alt="img">
                                     Leads
                                 </a>
                             </li>
                             <li>
-                                <a class="btn active w-100 text-start ps-4 py-3" href="states.html">
-                                    <img class="me-2 icon-image" src="../images/globe-white.png" alt="img">
+                                <a class="btn w-100 text-start ps-4 py-3" href="states.html">
+                                    <img class="me-2 icon-image" src="../images/globe.png" alt="img">
                                     States
                                 </a>
                             </li>
@@ -92,33 +92,67 @@
                 <div class="tem-right-btm py-4 px-2 px-lg-0">
                     <div class=" overflow-y-auto h-100">
                         <!-- code inside this div -->
-                        <div class="states-main h-100">
+                        <div class="leads-main h-100">
                             <div class="bg-white h-100 rounded t-main-shadow p-3">
-                                <div class="overflow-auto h-100">
-                                    <h3>Add State</h3>
-                                    <div class="add-state-form col-md-8">
+                                <div class="overflow-auto px-2 h-100">
+                                    <h3>Add Lead</h3>
+                                    <div class="add-lead-form col-lg-8">
                                         <form action="">
                                             <p class="mb-1 fw-bold">Upload Image</p>
-                                            <input class="d-none" type="file" name="state-img" id="up-state-img">
+                                            <input class="d-none" type="file" name="state-img" id="up-profile-img">
                                             <div class="d-flex justify-content-center justify-content-sm-start">
-                                                <label for="up-state-img">
+                                                <label for="up-profile-img">
                                                     <div class="image-prev-box position-relative">
                                                         <div
                                                             class="position-absolute top-50 start-50 translate-middle z-0">
                                                             <i class="fa-solid fa-plus fs-2"></i>
                                                         </div>
-                                                        <img id="state-uploaded-img" class="z-1 position-relative"
+                                                        <img id="lead-uploaded-img" class="z-1 position-relative"
                                                             src="../images/california.png" alt="img">
                                                     </div>
                                                 </label>
                                             </div>
-                                            <div class="col-sm-8 mt-4">
-                                                <input class="leads-sinput focus-none" type="text" name="state-name"
-                                                    id="state-name" placeholder="State Name">
+                                            <div class="d-flex flex-wrap justify-content-between">
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <input class="leads-sinput focus-none" type="text" name="name"
+                                                        id="name" placeholder="Name">
+                                                </div>
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <input class="leads-sinput focus-none" type="tel" name="phone"
+                                                        id="phone" placeholder="Phone">
+                                                </div>
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <input class="leads-sinput focus-none" type="email" name="email"
+                                                        id="email" placeholder="Email">
+                                                </div>
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <input class="leads-sinput focus-none" type="text" name="address"
+                                                        id="address" placeholder="Address">
+                                                </div>
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <input class="leads-sinput focus-none" type="number"
+                                                        name="loan-number" id="loan-number" placeholder="Loan number">
+                                                </div>
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <input class="leads-sinput focus-none" type="Number" name="SSN"
+                                                        id="SSN" placeholder="SSN">
+                                                </div>
+                                                <div class="col-12 col-sm-6 px-sm-2 mt-4">
+                                                    <select class="leads-sinput focus-none" name="status" id="status">
+                                                        <option class="d-none" value="" selected disabled>Status
+                                                        </option>
+                                                        <option value="option1">Active</option>
+                                                        <option value="option2">Pending</option>
+                                                        <option value="option3">Past Due</option>
+                                                        <option value="option3">RTA</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div
-                                                class="mt-4 d-flex col-sm-8 justify-content-center justify-content-sm-end">
-                                                <input class="btn btn-blue px-5 py-2" type="button" value="Submit">
+                                            <div class="d-flex justify-content-center mt-4">
+                                                <div class="col-12 col-sm-6 px-sm-2">
+                                                    <input class="btn btn-blue py-sm-2 w-100" type="button"
+                                                        value="Submit">
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -141,8 +175,8 @@
     <script src="../js/main.js"></script>
 
     <script>
-        let uploadedimg = document.getElementById('up-state-img');
-        let previewdimg = document.getElementById('state-uploaded-img');
+        let uploadedimg = document.getElementById('up-profile-img');
+        let previewdimg = document.getElementById('lead-uploaded-img');
         uploadedimg.addEventListener('input', function (event) {
             console.log("Hello, World!");
             let uploadedimgs = event.target.files[0];

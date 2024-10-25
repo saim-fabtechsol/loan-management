@@ -2,17 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'dm_sans';
+    font-family: 'DM Sans';
 }
 
-@font-face {
-    font-family: 'dm_sans';
-    src: url('../fonts/dmsans-variablefont_opszwght-webfont.woff2') format('woff2'),
-        url('../fonts/dmsans-variablefont_opszwght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 .template-body {
     background-color: #F8F7FA;
@@ -32,7 +25,9 @@
     outline: none;
     border: 1px solid #dee2e6;
 }
-
+.text-12{
+    font-size: 12px;
+}
 .bg-custom-gray {
     background-color: #F2F2F2;
 }
@@ -74,6 +69,7 @@
 }
 
 .btn-blue:hover {
+    color: #fff;
     background-color: rgba(11, 178, 212, .5);
 }
 
@@ -353,7 +349,12 @@
     object-fit: cover;
     display: none;
 }
-
+.notification-img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
 
 
 
